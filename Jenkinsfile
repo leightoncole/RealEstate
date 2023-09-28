@@ -14,7 +14,7 @@ node('appserver')
     }
     stage('Push-to-dockerhub')
     {
-        docker.withRegistry('https://registry.hub.docker.com', 'dockerhub_credentials')
+        docker.withRegistry('https://registry.hub.docker.com/v2/', 'dockerhub_credentials')
         {
          app.push("latest")
         }
