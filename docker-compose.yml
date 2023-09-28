@@ -1,10 +1,10 @@
-version: '3.3'
+version: '2.4'
 services: 
-  snake:
-    image: 'leightoncole/game_docker_repo:latest'
+  apache:
+    image: 'leightoncole/realestate:latest'
     environment:
       - 'PORT:3000'
     ports:
       - '80:3000'
     volumes:
-      - ./:/app    
+      - ./:/usr/local/apache2/htdocs/

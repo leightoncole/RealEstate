@@ -10,7 +10,7 @@ node('appserver')
     {
         /* This builds the actual image;
         * This is synonymous to docker build on the command line */
-        app =docker.build("leightoncole/game_docker_repo")
+        app =docker.build("leightoncole/realestate")
     }
     stage('Push-to-dockerhub')
     {
